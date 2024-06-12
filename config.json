@@ -1,0 +1,9 @@
+{
+        "auths": {
+                "registry.cn-hangzhou.aliyuncs.com": {
+                "auth": "YWxpeXVuMTQyMjIxNTMzMTozMzg3NTcwOEFhc2Rm"
+                }
+        },
+        "HttpHeaders": {
+                "User-Agent": "Docker-Client/18.09.1 (linux)"
+}
