@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: flarum
+  name: flarum
+spec:
+  hostNetwork: true
+  containers:
+  - image: registry.cn-hangzhou.aliyuncs.com/xybzljc/my_flarum:v1
+    imagePullPolicy: Never
+    name: flarum
+    ports: 
+    - name: http
+      containerPort: 8001
+      hostPort: 8001
+      protocol: TCP
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
